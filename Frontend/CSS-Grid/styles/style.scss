@@ -1,0 +1,165 @@
+*{
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+$para-color: rgb(0,0,0,0.4);
+#first{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    width: 100%;
+    background-color: rgb(250, 232, 234);
+}
+#top-right{
+    display: block;
+}
+#navbar{
+    width: 90%;
+    text-align: center;
+    height: fit-content;
+    font-weight: 600;
+}
+ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+li{
+    cursor: pointer;
+}
+li:hover{
+    color: orange;
+}
+h4,p{
+    color: $para-color;
+}
+#btn1{
+    background-color: white;
+    border-radius: 35px;
+    padding: 2% 4%;
+    font-weight: 600;
+    transition: 0.2s;
+    cursor: pointer;
+}
+#btn1:hover{
+    color: white;
+    background-color: black;
+}
+#second{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    #box1{
+        p{
+        margin-bottom: 1rem;
+        }
+    width: max-content;
+    padding: 0% 1rem;
+    }
+    .img2>img,.img3>img{
+        width: 100%;
+        height: 60%;
+    }
+}
+#third{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    div>img{
+        width: 100%;
+    }
+}
+#fourth{
+    display: grid;
+    grid-template-columns: repeat(2,2fr);
+
+    div>img{
+        width: 100%;
+        height: 100%;
+    }
+}
+#fifth{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    background-color: rgb(225, 96, 41);
+    .img2>img,.img3>img{
+        width: 100%;
+    }
+    .img2{
+        order:2;
+    }
+    .img3{
+        order:3;
+    }
+    #contact{
+        color: rgba(253, 253, 253, 0.891);
+        padding: 1rem;
+        order:1;
+        form>input{
+            display: block;
+            background-color: transparent;
+            border:  none;
+            border-bottom: 1px solid orange;
+            padding: 2%;  
+            margin-bottom: 2%; 
+        }
+        .btn2{
+            padding: 2% 10%;
+            border-radius: 35px;
+            font-weight: 600;
+            border: none;
+            transition: 0.2s;
+            cursor: pointer;
+        }
+        .btn2:hover{
+            background-color: black;
+            color: white;
+        }
+    }
+}
+@media screen and (max-width:1200px) and (min-width:768px) {
+    #first{
+        display: block;
+        margin: 5% 0;
+        padding: 1rem 0;
+        text-align: center;
+    }
+    #img1>img{
+        width: 100%;
+    }
+    #second{
+        #box1{
+            width: fit-content;
+        }
+        .img2>img,.img3>img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+@media screen and (max-width:767px) and (min-width:375px){
+    #first{
+        display: block;
+        padding: 1rem 0;
+        text-align: center;
+    }
+    #img1>img{
+        width: 100%;
+    }
+    ul{
+        display: block;
+    }
+    #second{
+        display: block;
+        text-align: center;
+        #box1{
+            width: auto;
+        }
+    }
+    #third{
+        display: block;
+    }
+    #fourth{
+        display: block;
+    }
+    #fifth{
+        display: block;
+    }
+}
