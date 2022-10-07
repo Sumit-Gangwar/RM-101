@@ -1,1 +1,1 @@
-![Demo](./../Nav%20Demo.jpg)
+![Demo](./Nav%20Demo.jpg)
